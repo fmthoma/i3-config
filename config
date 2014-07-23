@@ -202,3 +202,13 @@ exec --no-startup-id /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-s
 exec --no-startup-id nm-applet
 #exec "xfce4-power-manager --no-daemon &"
 #exec "xmodmap -e 'keycode 107 = Super_R NoSymbol Super_R NoSymbol Super_R'"
+
+## config for dual monitor in VBox
+## VBOX0 = vertical, VBOX1 = horizontal
+workspace 1 output VBOX0
+workspace 2 output VBOX0
+workspace 3 output VBOX1
+
+assign [class="Meld"] 3
+assign [class="Comparison"] 3
+assign [class="Firefox"] 3
